@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munaso's Portfolio</title>
+  <meta name="description" content="Portfolio for world-renowned software engineer Munaso">
+  <meta name="author" content="Munaso">
+  <link rel="icon" type="image/png" href="./imgs/outfavicon.png">
+
+  <script src="https://kit.fontawesome.com/f0d48706b9.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+
+
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+<section class="navbar-home">
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img class="navbar__logo" src="./imgs/infavicon.png">
+      <a href="#"> &nbsp;Munaso</a>
+    </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home" id="homeMenu">Home</li>
+        <li class="navbar__menu__item" data-link="#about" id="aboutMenu">About</li>
+        <li class="navbar__menu__item" data-link="#work" id="workMenu">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials" id="testimonialsMenu">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact" id="contactMenu">Contact</li>
+      </ul>
+
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="section">
+    <img 
+      src="imgs/profile.png"
+      alt="Munaso's profile photo"
+      class="home__avatar">
+      <h1 class="home__title">웹 개발자 무나소입니다</h1>
+      <h2 class="home__description">Web developer</h2>
+      <button id="btn_contact" class="home__contact" >Contact Me</button>
+  </section>
+
+  <button class="arrow-up" data-link="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
+
+  
+
+</section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <section class="section__container">
+    <h1>About Me</h1>
+    <p>A web developer </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+          HTML, CSS, JavaScript
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <h2 class="major__title">Mobile</h2>
+        <div class="major__description">
+          Android, React Native
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-solid fa-server"></i>
+        </div>
+        <h2 class="major__title">Back-end</h2>
+        <div class="major__description">
+          HTML, CSS, <br>JavaScript, React
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <h2 class="major__title">Tools</h2>
+        <div class="major__description">
+          Visual Studio Code, Firebase, AWS, Git
+        </div>
+      </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <img src="imgs/sparta_logo.png" alt="Sparta" class="job__logo">
+        <div class="job__description">
+          <p class="job__name">미니튜터, 수강생의 코드질문 질의응답 역할</p>  
+          <p class="job__period">2022. 7. (1개월)</p>
+        </div>        
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- Skills section deleted-->
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <h1>My work</h1>
+    <h3>Projects</h3>
+<!-- my work 부분에서 엘리와 똑같이 구성한다. -->
+
+    <div class="work__categories">
+      <button class="category__btn selected" data-filter="*">All</button>
+      <button class="category__btn" data-filter="web">Web</button>
+      <button class="category__btn" data-filter="mobile">Mobile</button>
+    </div>
+    <div class="work__projects">
+      <a 
+        class="project"
+        data-type="web"
+        target="blank"
+      >
+      <img
+        class="project__img" 
+        src="imgs/projects/sample-matjip.png" 
+        alt="sample-matjip">
+      <div class="project__description">
+        <h3>matjip-map</h3>
+        <span>customized matjip map with DB</span>
+      </div>
+      </a>
+
+      <a 
+        class="project"
+        data-type="web"
+        target="blank"
+      >
+      <img
+        class="project__img"
+        src="imgs/projects/sample-words.png" 
+        alt="sample-words">
+      <div class="project__description">
+        <h3>Vocabulary list</h3>
+        <span>customized Vocabulary list with DB</span>
+      </div>
+      </a>
+
+      <a 
+        class="project"
+        data-type="mobile"
+        target="blank"
+      >
+      <img
+        class="project__img" 
+        src="imgs/projects/sample-honeytip.png" 
+        alt="sample-honeytip">
+      <div class="project__description">
+        <h3>Tip list</h3>
+        <span>customized tip list with DB</span>
+      </div>
+      </a>
+      
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="section__container">
+      <h1>Testimonials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <i id="testimonial__icon-1" class="fa-solid fa-user-tie fa-4x "></i>
+          <div class="testimonial__speech-bubble">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam perspiciatis quaerat at enim repellendus neque repudiandae, molestiae dignissimos obcaecati, voluptas quisquam minima ratione dolorum maxime vel? Maxime fuga commodi provident!</p>
+            <p class="name"><a href="">Mr. </a>Asan city</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam perspiciatis quaerat at enim repellendus neque repudiandae, molestiae dignissimos obcaecati, voluptas quisquam minima ratione dolorum maxime vel? Maxime fuga commodi provident!</p>
+            <p class="name"><a href="">Mr. </a>Asan city</p>
+          </div>
+          <i id="testimonial__icon-2" class="fa-solid fa-user-tie fa-4x" ></i>        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">Contact me</h1>
+    <h2 class="contact__email">coder.munaso@gmail.com</h2>
+    <div class="contact__links">
+      <a href="https://github.com/Munaso" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>      
+    </div>
+  </section>
+</body>
+</html>
